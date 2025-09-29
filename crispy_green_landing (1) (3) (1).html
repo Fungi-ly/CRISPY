@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crispy Green | Hamburguesas Veganas de Falafel para Negocios en Santiago</title>
+
+  <!-- SEO Básico -->
+  <meta name="description" content="Crispy Green ofrece hamburguesas de falafel veganas, 100% naturales y congeladas, pensadas para restaurantes, cafés y hoteles de la Región Metropolitana. Packs desde 200 unidades con despacho directo.">
+  <meta name="keywords" content="hamburguesas veganas, falafel, proveedor horeca, restaurantes, hoteles, congeladas, Chile, Región Metropolitana">
+  <meta name="author" content="Crispy Green">
+  <link rel="canonical" href="https://www.crispygreen.cl"  />
+
+  <!-- Open Graph (para redes sociales) -->
+  <meta property="og:title" content="Crispy Green | Hamburguesas Veganas de Falafel para tu Negocio" />
+  <meta property="og:description" content="Proveemos hamburguesas veganas 100% naturales y congeladas, listas para servir. Ideal para restaurantes y hoteles en la Región Metropolitana. Packs desde 200 unidades." />
+
+
+</head>
+
+
+  <title>Crispy Green | Hamburguesas de Falafel para tu Negocio</title>
+
+  <style>
+
+    .feature-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* mantiene proporción y rellena el cuadrado */
+  border-radius: 14px; /* conserva bordes redondeados */
+}
+    /* =============== Reset & Base =============== */
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --brand-dark:#0F3D2E;
+      --brand-dark-2:#1F5E42;
+      --brand-accent:#A3D65C;
+      --brand-gold:#EBCB2A;
+      --text:#333;
+      --muted:#555;
+      --surface:#fff;
+      --surface-2:#f8f9fa;
+      --line:rgba(0,0,0,.1);
+      --line-inv:rgba(255,255,255,.2);
+    }
+    html,body{height:100%}
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      line-height:1.6;
+      color:var(--text);
+      background:var(--surface);
+      overflow-x:hidden;
+    }
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+    /* =============== Utilities =============== */
+    .mx-auto{margin-left:auto;margin-right:auto}
+    .text-center{text-align:center}
+    .max-w-720{max-width:720px}
+    .max-w-900{max-width:900px}
+    .rounded{border-radius:10px}
+    .rounded-12{border-radius:12px}
+    .rounded-14{border-radius:14px}
+    .shadow-1{box-shadow:0 6px 18px rgba(0,0,0,.12)}
+    .shadow-2{box-shadow:0 10px 24px rgba(0,0,0,.18)}
+    .icon-sm{width:22px;height:22px;display:inline-block}
+    .icon-lg{width:40px;height:40px;display:block}
+    .w-100{width:100%}
+    .grid-gap-12{display:grid;gap:12px}
+    .mb-8{margin-bottom:8px}
+    .mb-18{margin-bottom:18px}
+    .mb-20{margin-bottom:20px}
+    .mb-24{margin-bottom:24px}
+    .mb-26{margin-bottom:26px}
+    .mb-30{margin-bottom:30px}
+    .mb-40{margin-bottom:40px}
+    .mb-60{margin-bottom:60px}
+    .ptb-100{padding:100px 0}
+    .hidden{display:none}
+
+/* utilidades */
+.unit{font-size:1rem}
+    /* =============== Buttons =============== */
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      font-weight:bold;text-decoration:none;cursor:pointer;transition:.3s;
+      border:0
+    }
+    .btn-primary{
+      background:var(--brand-gold);color:#0b2a20;padding:18px 35px;border-radius:50px;
+      box-shadow:0 10px 24px rgba(235,203,42,.35);position:relative
+    }
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(235,203,42,.4)}
+    .btn-primary::after{
+      content:"";position:absolute;inset:0;border-radius:inherit;
+      box-shadow:0 0 0 0 rgba(235,203,42,.35);animation:pulse 2.2s ease-out infinite
+    }
+    .btn-block{width:100%;text-align:center;border-radius:10px;padding:16px 18px}
+    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(235,203,42,.35)}70%{box-shadow:0 0 0 14px rgba(235,203,42,0)}100%{box-shadow:0 0 0 0 rgba(235,203,42,0)}}
+
+
+      
+
+    /* =============== Hero =============== */
+    .hero{
+      min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;
+      background:linear-gradient(135deg,var(--brand-dark),var(--brand-dark-2),var(--brand-dark));
+      background-size:200% 200%;
+      animation:heroShift 12s ease infinite;
+        padding-top: 80px; /* añade espacio arriba */
+    }
+    @keyframes heroShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    @media (prefers-reduced-motion:reduce){.hero{animation:none}.btn-primary::after{animation:none}}
+    @media (max-width: 768px) {
+  .hero {
+    padding-top: 90px; /* más espacio en pantallas pequeñas */
+  }
+}
+
+    .hero-content{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
+    .hero-text h1{
+      font-size:3.5rem;font-weight:900;color:#fff;margin-bottom:20px;line-height:1.1;
+      text-shadow:0 4px 18px rgba(0,0,0,.18)
+    }
+    .highlight{color:var(--brand-accent)}
+    .hero-text p{font-size:1.3rem;color:rgba(255,255,255,.92);margin-bottom:30px}
+    .hero-image{text-align:center;position:relative}
+    .package-main{width:350px;height:auto;animation:float 3s ease-in-out infinite;filter:drop-shadow(0 20px 40px rgba(0,0,0,.3))}
+    @keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-20px) rotate(2deg)}}
+    .volume-indicator{
+      position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);
+      background:rgba(255,255,255,.15);backdrop-filter:blur(10px);
+      padding:10px 20px;border-radius:25px;color:#fff;font-weight:bold
+    }
+
+    /* =============== About =============== */
+    .about{background:var(--surface)}
+    .about h2{font-size:2.5rem;text-align:center;margin-bottom:20px;color:var(--brand-dark)}
+    .about-description{
+      font-size:1.2rem;text-align:center;max-width:800px;margin:0 auto 60px;color:var(--muted)
+    }
+    .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-top:60px}
+    .feature{text-align:center;padding:30px;background:var(--surface-2);border-radius:15px;transition:transform .25s ease, box-shadow .25s ease}
+    .feature:hover{transform:translateY(-6px) rotate(-.2deg);box-shadow:0 14px 28px rgba(0,0,0,.12)}
+    .feature h3{color:var(--brand-dark);margin:14px 0 10px}
+    .feature-media{width:100%;aspect-ratio:1/1;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.12);margin-bottom:8px}
+    .feature-media img{width:100%;height:100%;object-fit:cover;display:block}
+
+    /* =============== Process =============== */
+    .process{background:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%)}
+    .process h2{font-size:2.5rem;text-align:center;margin-bottom:60px;color:var(--brand-dark)}
+    .process-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px}
+    .step{background:#fff;padding:40px;border-radius:20px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.1);position:relative}
+    .step-number{
+      position:absolute;top:-20px;left:50%;transform:translateX(-50%);
+      width:40px;height:40px;background:var(--brand-accent);color:#fff;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:1.2rem
+    }
+    .step h3{color:var(--brand-dark);margin:20px 0 15px}
+
+    /* =============== Testimonials =============== */
+    .testimonials{background:#f7fbf9}
+    .testimonials h2{font-size:2.5rem;text-align:center;margin-bottom:40px;color:var(--brand-dark)}
+    .testimonials-grid{display:grid;grid-template-columns:1fr;gap:24px;max-width:1100px;margin:0 auto}
+    @media (min-width:768px){.testimonials-grid{grid-template-columns:repeat(3,1fr)}}
+    .testimonial{
+      background:#fff;border:1px solid #e7ecea;border-radius:16px;padding:22px;text-align:center;
+      box-shadow:0 10px 20px rgba(0,0,0,.06);transition:.25s
+    }
+    .testimonial:hover{transform:translateY(-6px)}
+    .testimonial-img{width:90px;height:90px;border-radius:50%;object-fit:cover;margin:0 auto 12px;display:block;border:3px solid #e7ecea}
+    .testimonial h3{color:var(--brand-dark);font-size:1.05rem;margin-bottom:8px}
+    .testimonial p{color:#455a52;font-size:0.98rem;line-height:1.45}
+
+    /* =============== Pricing =============== */
+    .pricing{background:#fff}
+    .pricing h2{font-size:2.5rem;text-align:center;margin-bottom:60px;color:var(--brand-dark)}
+    .pricing-grid{display:grid;gap:25px;grid-template-columns:1fr}
+    @media (min-width:768px){.pricing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    .pricing-card{
+      background:var(--surface-2);padding:40px 30px;border-radius:20px;text-align:center;
+      border:3px solid transparent;transition:.25s;position:relative;overflow:hidden;display:flex;flex-direction:column;height:100%
+    }
+    .pricing-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 24px 48px rgba(0,0,0,.12);border-color:var(--brand-accent)}
+    .pricing-card.featured{background:linear-gradient(135deg,var(--brand-dark) 0%,var(--brand-dark-2) 100%);color:#fff;transform:scale(1.05)}
+    .pricing-card.featured:hover{transform:scale(1.05) translateY(-8px)}
+    .pricing-card h3{font-size:1.8rem;margin-bottom:20px;color:var(--brand-dark)}
+    .pricing-card.featured h3{color:var(--brand-accent)}
+    .price{font-size:2.5rem;font-weight:bold;color:var(--brand-accent);margin-bottom:20px}
+    .pricing-card.featured .price{color:var(--brand-gold)}
+    .pricing-features{list-style:none;margin-bottom:30px;flex:1}
+    .pricing-features li{padding:5px 0;border-bottom:1px solid var(--line)}
+    .pricing-card.featured .pricing-features li{border-color:var(--line-inv)}
+
+    /* =============== Contact =============== */
+    .final-cta{
+      background:linear-gradient(135deg,var(--brand-dark) 0%,var(--brand-dark-2) 100%);
+      text-align:center
+    }
+    .contact-box{max-width:720px}
+    .contact-title{font-size:2.2rem;color:#fff}
+    .contact-subtitle{color:rgba(255,255,255,.9)}
+    .contact-form{background:#fff;padding:20px;border-radius:12px}
+    .form-input,.form-textarea{padding:12px;border:1px solid #ccd0d5;border-radius:8px}
+    .form-textarea{resize:vertical}
+    .form-label{display:flex;gap:8px;align-items:center;font-size:.95rem;color:#444}
+    .honeypot{display:none}
+
+    /* =============== FAQ =============== */
+    .faq{background:#f7fbf9}
+    .faq-title{color:var(--brand-dark)}
+    .qa{background:#fff;border:1px solid #e7ecea;border-radius:12px;padding:14px 18px}
+    .qa summary{cursor:pointer;font-weight:700;color:var(--brand-dark);list-style:none}
+    .qa summary::-webkit-details-marker{display:none}
+    .qa p{margin-top:8px}
+
+    /* =============== Sticky WhatsApp =============== */
+    .wa-sticky{
+      position:fixed;bottom:20px;right:20px;width:65px;height:65px;background:#25D366;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;box-shadow:0 4px 6px rgba(0,0,0,.3);z-index:1000;
+      transition:transform .2s ease
+    }
+    .wa-sticky:hover{transform:scale(1.06)}
+
+    /* =============== Animations & Effects =============== */
+    .fade-in{opacity:0;transform:translateY(30px);transition:.6s}
+    .fade-in.visible{opacity:1;transform:translateY(0)}
+
+    /* =============== Responsive =============== */
+    @media (max-width:768px){
+      .hero-content{grid-template-columns:1fr;text-align:center;gap:40px}
+      .hero-text h1{font-size:2.5rem}
+      .package-main{width:250px}
+      .process-steps{grid-template-columns:1fr}
+      .pricing-card.featured{transform:none}
+    }
+  </style>
+</head>
+<body>
+<!-- Logo -->
+<a href="/" class="logo">
+  <img src="./logo vector.png
+  " alt="Logo Crispy Green">
+</a>
+
+<style>
+.logo {
+  position: absolute;
+  top: 25px;   /* más margen desde arriba */
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo img {
+  max-width: 180px;  /* logo más grande en desktop */
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    top: 15px;       /* se mantiene separado del texto */
+    left: 15px;
+  }
+  .logo img {
+    max-width: 120px; /* más grande que antes en móvil, pero sin invadir el título */
+  }
+}
+
+
+</style>
+  <!-- ================== Hero ================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>La hamburguesa <span class="highlight">vegana</span> que tu carta necesita.</h1>
+          <p>Natural. Rica. Lista para servir.</p>
+          <a href="#contact" class="btn btn-primary">👉 Solicitar Cotización</a>
+        </div>
+        <div class="hero-image">
+          <img
+  alt="Crispy Green Package" class="package-main"
+  src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'><rect width='300' height='400' rx='16' fill='%23166534'/><text x='150' y='86' text-anchor='middle' fill='white' font-size='34' font-weight='bold'>CRISPY</text><text x='150' y='124' text-anchor='middle' fill='white' font-size='34' font-weight='bold'>GREEN</text><text x='150' y='154' text-anchor='middle' fill='white' font-size='14'>FALAFEL BURGERS</text><circle cx='150' cy='220' r='60' fill='%23D2691E'/><rect x='90' y='210' width='120' height='20' fill='%23A3D65C' rx='10'/><rect x='100' y='240' width='100' height='8' fill='%23FF6347' rx='4'/><text x='150' y='310' text-anchor='middle' fill='white' font-size='16' font-weight='bold'>100%25 NATURAL</text></svg>">
+
+          <div class="volume-indicator">Solo Región Metropolitana - Packs desde 200 unidades</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== About ================== -->
+<section class="about ptb-100">
+  <div class="container">
+    <h2>¿Qué es Crispy Green?</h2>
+    <p class="about-description">
+      Hamburguesa de falafel congelada, 100% natural, vegana y lista para cocinar. 
+      Pensada para restaurantes, cafés, hoteles y tiendas gourmet de la Región Metropolitana que buscan innovar su menú y aumentar su oferta.
+    </p>
+
+    <div class="features-grid">
+      <!-- 100% Natural -->
+      <div class="feature fade-in">
+        <div class="feature-media rounded-14 shadow-1 mb-8">
+          <img src="natural.jpg"   alt="   100% Natural">
+        </div>
+        <h3>100% Natural</h3>
+        <p>Sin conservantes artificiales ni aditivos químicos</p>
+      </div>
+
+      <!-- Congelada -->
+      <div class="feature fade-in">
+        <div class="feature-media rounded-14 shadow-1 mb-8">
+          <img src="congelada.png" alt=" Congelada">
+        </div>
+        <h3>Congelada</h3>
+        <p>Lista para servir, larga vida útil</p>
+      </div>
+
+      <!-- Sabor Único -->
+      <div class="feature fade-in">
+        <div class="feature-media rounded-14 shadow-1 mb-8">
+          <img src="sabor.jpg" alt="Sabor Único">
+        </div>
+        <h3>Sabor Único</h3>
+        <p>Consistencia perfecta y sabor auténtico</p>
+      </div>
+
+      <!-- Venta por Volumen -->
+      <div class="feature fade-in">
+        <div class="feature-media rounded-14 shadow-1 mb-8">
+          <img src="volumen.png"  alt=" Venta por Volumen">
+        </div>
+        <h3>Venta por Volumen</h3>
+        <p>Packs desde 200 unidades</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ================== Process ================== -->
+  <section class="process ptb-100">
+    <div class="container">
+      <h2>Cómo Comprar</h2>
+      <div class="process-steps">
+        <div class="step fade-in">
+          <div class="step-number">1</div>
+          <h3>Solicita tu Cotización</h3>
+          <p>Mínimo 200 unidades. Te respondemos en menos de 24 horas con precios especiales por volumen.</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-number">2</div>
+          <h3>Recibe Despacho Directo</h3>
+          <p>Entrega directa en Región Metropolitana. Despacho gratis desde 500 unidades.</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-number">3</div>
+          <h3>Vende Más</h3>
+          <p>Amplía tu menú con un producto innovador y saludable que tus clientes van a amar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== Testimonials ================== -->
+<section class="testimonials ptb-100">
+  <div class="container">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonials-grid">
+
+      <div class="testimonial fade-in">
+        <img class="testimonial-img" alt="Foto de María López" src="tavelli.png">
+        <h3>María López — Tavelli</h3>
+        <p>"Agregamos Crispy Green al menú y el ticket promedio subió. Fácil de preparar."</p>
+      </div>
+
+      <div class="testimonial fade-in">
+        <img class="testimonial-img" alt="Foto de Carlos Pérez" src="italia.png">
+        <h3>Carlos Pérez — Galpón Italia</h3>
+        <p>"Excelente sabor y formato práctico. Además, la entrega fue rápida y confiable."</p>
+      </div>
+
+      <div class="testimonial fade-in">
+        <img class="testimonial-img" alt="Foto de Ana Torres" src="Sublime.png">
+        <h3>Ana Torres — Sublime</h3>
+        <p>"Un producto innovador que nos diferenció de la competencia y aumentó las ventas."</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ================== Pricing ================== -->
+  <section class="pricing ptb-100">
+    <div class="container">
+      <h2>Packs Disponibles</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card fade-in">
+          <h3>Pack Starter</h3>
+          <div class="price">$1.450<span class="unit">/unidad</span></div>
+
+          <ul class="pricing-features">
+            <li>200 hamburguesas</li><li>Despacho coordinado RM</li><li>Soporte telefónico</li><li>Certificado sanitario</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Cotizar Ahora</a>
+        </div>
+
+        <div class="pricing-card featured fade-in">
+          <h3>Pack Pro</h3>
+ <div class="price">$1.350<span class="unit">/unidad</span></div>
+
+          <ul class="pricing-features">
+            <li>500 hamburguesas</li><li><strong>Despacho GRATIS RM</strong></li><li>Soporte prioritario</li><li>Material promocional</li><li>Descuento 7%</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">¡Más Popular!</a>
+        </div>
+
+        <div class="pricing-card fade-in">
+          <h3>Pack Horeca</h3>
+         <div class="price">$1.250<span class="unit">/unidad</span></div>
+
+          <ul class="pricing-features">
+            <li>1000+ hamburguesas</li><li>Despacho programado RM</li><li>Soporte dedicado</li><li>Capacitación del equipo</li><li>Descuento 15%</li><li>Stock de seguridad garantizado</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Contactar</a>
+        </div>
+
+        <div class="pricing-card fade-in">
+          <h3>Plan Retail</h3>
+          <div class="price">Cotizar</div>
+          <ul class="pricing-features">
+            <li>Tiendas & supermercados</li><li>Volúmenes personalizados</li><li>Logística especializada</li><li>Soporte comercial</li><li>Precios especiales</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Consultar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== Contact ================== -->
+  <section id="contact" class="final-cta ptb-100">
+    <div class="container mx-auto contact-box">
+      <h2 class="contact-title mb-18">Cotiza aquí</h2>
+      <p class="contact-subtitle mb-26">Déjanos tus datos y el mensaje se abrirá en WhatsApp.</p>
+
+      <form id="formCotiza" class="contact-form mx-auto">
+        <input type="text" name="website" class="honeypot" autocomplete="off">
+        <div class="grid-gap-12">
+          <input type="text" name="nombre" placeholder="Nombre y Apellido" required class="form-input">
+          <input type="tel" name="telefono" placeholder="WhatsApp o Teléfono" required class="form-input">
+          <input type="email" name="email" placeholder="Correo" required class="form-input">
+          <textarea name="mensaje" rows="4" required placeholder="Cuéntanos qué necesitas" class="form-textarea"></textarea>
+          <label class="form-label"><input type="checkbox" required> Acepto ser contactado por Crispy Green</label>
+          <button type="submit" class="btn btn-primary btn-block">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon-sm">
+            Enviar por WhatsApp
+          </button>
+          <div id="estadoForm" class="text-center"></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================== FAQ ================== -->
+  <section class="faq">
+    <div class="container max-w-900 mx-auto ptb-100">
+      <div class="faq-logo" style="text-align:center;margin-bottom:20px;"><img src="logo vector.png"    alt="  Logo Crispy Green" style="max-width:160px;height:auto;" /></div>
+
+      <h2 class="faq-title text-center mb-24">Preguntas Frecuentes</h2>
+      <details class="qa mb-12"><summary>¿Cuál es el mínimo de compra?</summary><p>200 unidades.</p></details>
+      <details class="qa mb-12"><summary>¿Despachan gratis?</summary><p>Sí, en Región Metropolitana desde 500 unidades.</p></details>
+      <details class="qa mb-12"><summary>¿Cómo se preparan?</summary><p>Llegan congeladas y están listas para freír u hornear.</p></details>
+      <details class="qa"><summary>¿Entregan boleta/factura?</summary><p>Sí, boleta o factura electrónica.</p></details>
+    </div>
+  </section>
+
+  <!-- ================== Sticky WhatsApp ================== -->
+  <a href="https://wa.me/56939668781?text=Hola%20quiero%20cotizar" target="_blank" rel="noopener" class="wa-sticky" aria-label="Abrir WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="" class="icon-lg" />
+  </a>
+
+  <!-- ================== JS ================== -->
+  <script>
+  // Fade-in con IntersectionObserver
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: .1, rootMargin: '0px 0px -50px 0px' }
+  );
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const t=document.querySelector(a.getAttribute('href'));
+      if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}) }
+    });
+  });
+
+  // Formulario -> WhatsApp
+  const form=document.getElementById('formCotiza');
+  const estado=document.getElementById('estadoForm');
+  const PHONE='56939668781';
+
+  function buildMessage(data){
+    const line=(k,v)=> v ? `${k}: ${v}\n` : '';
+    let msg='Nueva cotización — Crispy Green\n';
+    msg+=line('Nombre',data.get('nombre'));
+    msg+=line('Empresa',data.get('empresa'));
+    msg+=line('Teléfono',data.get('telefono'));
+    msg+=line('Email',data.get('email'));
+    msg+='\nMensaje:\n'+(data.get('mensaje')||'');
+    return msg;
+  }
+
+  if(form){
+    form.addEventListener('submit',(e)=>{
+      e.preventDefault();
+      if((form.querySelector('[name="website"]')?.value||'').trim()!==''){ return; }
+      const data=new FormData(form);
+      const nombre=(data.get('nombre')||'').trim();
+      const mensaje=(data.get('mensaje')||'').trim();
+      if(!nombre || !mensaje){ estado.textContent='Completa Nombre y Mensaje.'; return; }
+      const text=encodeURIComponent(buildMessage(data));
+      const waURL=`https://api.whatsapp.com/send?phone=${PHONE}&text=${text}`;
+      estado.textContent='Abriendo WhatsApp...';
+      const w=window.open(waURL,'_blank','noopener');
+      setTimeout(()=>{ if(!w || w.closed) window.location.href=waURL; },300);
+      form.reset();
+    });
+  }
+</script>
+
+  </script>
+</body>
+</html>
