@@ -270,6 +270,15 @@
     max-width: 120px; /* más grande que antes en móvil, pero sin invadir el título */
   }
 }
+/* Centrar la cuarta tarjeta (Venta por Volumen) en pantallas grandes */
+@media (min-width: 992px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .features-grid > .feature:nth-child(4) {
+    grid-column: 2; /* la mueve al centro */
+  }
+}
 
 
 </style>
